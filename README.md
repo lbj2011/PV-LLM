@@ -1,5 +1,5 @@
 
-<img src="https://github.com/lbj2011/PV-LLM/blob/main/doc_img/LLM%20LOGO.jpg" width="500"/>
+<img src="https://github.com/lbj2011/PV-LLM/blob/main/doc_img/LLM%20LOGO.jpg" width="300"/>
 
 # PV-LLM: Leveraging Multimodal LLMs for PV Analysis
 
@@ -22,7 +22,7 @@ The system can:
 * Describe fault severity in natural language
 
 **Figure: Multimodal LLM-based PV Image Analysis Flowchart**
-![Flowchart](image_flowchart.jpg)
+<img src="https://github.com/lbj2011/PV-LLM/blob/main/doc_img/image_flowchart.jpg" width="600"/>
 
 ---
 
@@ -41,7 +41,7 @@ This enables the creation of a unified degradation knowledge base across:
 * Timescales
 
 **Figure: Global PV Degradation Trends Extracted from Literature**
-![World Degradation Map](world_degradation.jpg)
+<img src="https://github.com/lbj2011/PV-LLM/blob/main/doc_img/world_degradation.jpg" width="600"/>
 
 ---
 
@@ -49,8 +49,8 @@ This enables the creation of a unified degradation knowledge base across:
 
 This work is supported by the **Durable Module Materials (DuraMAT) Consortium**, a U.S. Department of Energy initiative focused on PV module reliability and innovation.
 
-**Figure: DuraMAT Logo**
-![DuraMAT](duramat.jpg)
+
+<img src="https://github.com/lbj2011/PV-LLM/blob/main/doc_img/duramat.jpg" width="200"/>
 
 ---
 
