@@ -19,8 +19,8 @@ The framework analyzes multiple PV image types, including:
 
 Key features include **zero-shot and few-shot inference**, **binary and multiclass classification**, and compatibility with state-of-the-art multimodal LLMs (e.g., ChatGPT, Gemini, Claude, CLIP). By eliminating the need for large labeled datasets and retraining, this framework serves as a **rapid pre-screening tool** for scalable PV health monitoring.
 
-📦 **Dataset**: A benchmark dataset of labeled PV images is publicly available at  
-👉 https://datahub.duramat.org/dataset/llm-pv-image
+**Dataset**: A benchmark dataset of labeled PV images is publicly available at  
+https://datahub.duramat.org/dataset/llm-pv-image
 
 **Figure: Multimodal LLM-based PV Image Analysis Flowchart**
 <img src="https://github.com/lbj2011/PV-LLM/blob/main/doc_img/image_flowchart.jpg" width="600"/>
