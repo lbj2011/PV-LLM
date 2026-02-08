@@ -7,19 +7,20 @@ PV-LLM is a novel framework that utilizes **multimodal large language models (LL
 
 ---
 
-## 1. PV Health Monitoring via Multimodal LLMs
+## 1. Unified LLM-Based Framework for Heterogeneous PV Image Diagnostics
 
-Photovoltaic modules experience various types of degradation and faults during operation. Traditional inspection techniques require significant manual effort and expert interpretation. PV-LLM automates this by using **multimodal LLMs** to analyze different types of PV images:
+This project introduces an **open-source multimodal large language model (LLM)–based framework** for automated photovoltaic (PV) image diagnostics across heterogeneous imaging modalities. The framework enables a **single, task-aware inference pipeline** for diverse PV inspection tasks without task-specific model training.
 
-* **Visibleimages** (birddropping)
-* **Infrared (IR) images** (thermal anomalies, like hotspot)
-* **Electroluminescence (EL) images** (microcracks, broken cells)
+The framework analyzes multiple PV image types, including:
 
-The system can:
+- **Visible images** (bird droppings, surface contamination)
+- **Infrared (IR) images** (thermal anomalies, e.g., hotspots)
+- **Electroluminescence (EL) images** (microcracks, broken cells)
 
-* Classify fault types
-* Localize issues
-* Describe fault severity in natural language
+Key features include **zero-shot and few-shot inference**, **binary and multiclass classification**, and compatibility with state-of-the-art multimodal LLMs (e.g., ChatGPT, Gemini, Claude, CLIP). By eliminating the need for large labeled datasets and retraining, this framework serves as a **rapid pre-screening tool** for scalable PV health monitoring.
+
+📦 **Dataset**: A benchmark dataset of labeled PV images is publicly available at  
+👉 https://datahub.duramat.org/dataset/llm-pv-image
 
 **Figure: Multimodal LLM-based PV Image Analysis Flowchart**
 <img src="https://github.com/lbj2011/PV-LLM/blob/main/doc_img/image_flowchart.jpg" width="600"/>
