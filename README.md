@@ -123,7 +123,7 @@ Data in, degradation results out: LLM-assisted, end-to-end degradation analysis 
 - **Simple** (one click) and **Advanced** (step by step) modes, AI code export and diagnostics
 
 <p align="center">
-  <img src="doc_img/pipeline_pvcopilot.png" width="90%"/>
+  <img src="doc_img/pipeline_pvcopilot.jpg" width="90%"/>
 </p>
 
 - **Web app**: [pvtools.lbl.gov/pv-copilot](https://pvtools.lbl.gov/pv-copilot)
