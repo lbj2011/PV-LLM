@@ -4,12 +4,13 @@
 
 <p align="center">
   <b>Multimodal large language models for photovoltaic reliability</b><br/>
-  PV image diagnostics &nbsp;·&nbsp; Literature mining of field degradation
+  PV image diagnostics &nbsp;·&nbsp; Literature mining of field degradation &nbsp;·&nbsp; Automated degradation analysis
 </p>
 
 <p align="center">
   <a href="https://datahub-duramat.nlr.gov/data-repo/projects/8c329288-3b34-46ad-9ec5-d62bb06dd664/datasets/9d8e61a8-652b-4de0-949c-dd83010f516d"><img src="https://img.shields.io/badge/dataset-2%2C210%20records-0868ac"/></a>
   <a href="https://pvtools.lbl.gov/field-degradation"><img src="https://img.shields.io/badge/web%20tool-pvtools.lbl.gov-43a2ca"/></a>
+  <a href="https://github.com/lbj2011/PVCopilot"><img src="https://img.shields.io/badge/PV--Copilot-repo-7bccc4"/></a>
 </p>
 
 ---
@@ -18,7 +19,8 @@
 
 1. [PV Image Diagnostics](#1-pv-image-diagnostics)
 2. [Global PV Field Degradation Database](#2-global-pv-field-degradation-database)
-3. [Acknowledgment](#acknowledgment)
+3. [PV-Copilot](#3-pv-copilot)
+4. [Acknowledgment](#acknowledgment)
 
 ---
 
@@ -34,7 +36,7 @@ One task-aware multimodal LLM pipeline for visible, infrared (IR) and electrolum
   <img src="doc_img/image_flowchart.jpg" width="80%"/>
 </p>
 
-**Dataset**: [labeled PV image benchmark on DuraMAT DataHub](https://datahub.duramat.org/dataset/llm-pv-image)
+**Dataset**: [labeled PV image benchmark on DuraMAT DataHub](https://datahub-duramat.nlr.gov/data-repo/projects/8c329288-3b34-46ad-9ec5-d62bb06dd664/datasets/bdac3ba6-8e13-4c24-8fae-86f81b45cd00)
 
 ### How to cite
 
@@ -63,11 +65,18 @@ LLMs read the field-degradation literature and extract every reported annual deg
 
 ### Pipeline
 
+- Sources: **Scopus** and **EU PVSEC** papers
+- **ChatGPT** abstract screening, **Claude** full-text extraction, **ChatGPT** cross-check
+- **1,675** records with complete rate, technology, duration and location
+
 <p align="center">
   <img src="doc_img/pipeline.png" width="100%"/>
 </p>
 
 ### Global map
+
+- One point per site, colored by degradation rate
+- Most records from **Asia** (35%) and **Europe** (26%)
 
 <p align="center">
   <img src="doc_img/rate_map.png" width="100%"/>
@@ -75,11 +84,12 @@ LLMs read the field-degradation literature and extract every reported annual deg
 
 ### Degradation rate distribution
 
+- Median **−0.96 %/year** for all data (1,473 records)
+- Median **−0.80 %/year** without reported faults (649 records)
+
 <p align="center">
   <img src="doc_img/rate_distribution.png" width="560"/>
 </p>
-
-Median **−0.96 %/year** for all data (1,473 records), **−0.80 %/year** without reported faults (649 records).
 
 ### Get the data
 
@@ -91,10 +101,30 @@ Median **−0.96 %/year** for all data (1,473 records), **−0.80 %/year** witho
 
 ---
 
+## 3. PV-Copilot
+
+Data in, degradation results out: LLM-assisted, end-to-end degradation analysis of PV field data.
+
+- **Automatic column mapping** for uploaded time series
+- **Filtering, degradation rates** (YoY, regression, CSD) and **PVPRO** single-diode parameters, built on pvlib and RdTools
+- **Simple** (one click) and **Advanced** (step by step) modes, AI code export and diagnostics
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/lbj2011/PVCopilot/main/docs/images/01_home.png" width="80%"/>
+</p>
+
+| | |
+|---|---|
+| **Web app** | [pvtools.lbl.gov/pv-copilot](https://pvtools.lbl.gov/pv-copilot) |
+| **Code** | [github.com/lbj2011/PVCopilot](https://github.com/lbj2011/PVCopilot) · [PyPI: pvcopilot](https://pypi.org/project/pvcopilot/) |
+| **Paper** | B. Li and A. Jain, "PV Copilot: A Large Language Model–Enabled Tool for End-to-End PV Degradation Analysis," *IEEE PVSC*, 2026 |
+
+---
+
 ## Acknowledgment
 
 <img src="doc_img/duramat.jpg" width="150" align="right"/>
 
 Supported by the **Durable Module Materials (DuraMAT) Consortium**, U.S. Department of Energy.
 
-**Contact**: baojieli@lbl.gov
+**Contact**: Baojie Li (baojieli@lbl.gov) · Anubhav Jain (ajain@lbl.gov)
