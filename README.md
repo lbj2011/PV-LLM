@@ -27,19 +27,16 @@ https://datahub.duramat.org/dataset/llm-pv-image
 
 ---
 
-## 2. Literature Mining: Global PV Degradation Insights
+## 2. Literature Mining: Global PV Field Degradation Database
 
-PV-LLM also performs large-scale **literature analysis** using LLMs. The system can:
+PV-LLM also performs large-scale **literature mining** with LLMs. Papers are found through Scopus keyword searches, EU PVSEC proceedings and the reference lists of earlier reviews; LLMs screen the papers, extract the reported field degradation rates with their context (PV technology, duration, location, mounting, faults, reversible losses), and every record is validated against the source PDF.
 
-* Read scientific papers
-* Identify and extract degradation rates, technologies, and climates
-* Compile global trends in PV degradation
+**Database (release v1.0)**: 2,210 field-measured annual degradation rates from 662 papers (1980-2026) in 78 countries and regions.
 
-This enables the creation of a unified degradation knowledge base across:
-
-* Regions (e.g., US, EU, Asia)
-* Technologies (e.g., mono, poly, thin-film)
-* Timescales
+- **Download**: [DuraMAT DataHub](https://datahub-duramat.nlr.gov/data-repo/projects/8c329288-3b34-46ad-9ec5-d62bb06dd664/datasets/9d8e61a8-652b-4de0-949c-dd83010f516d) (`pv_field_degradation_records.csv`, one row per reported rate)
+- **Column description**: [field_degradation_dataset/README.md](field_degradation_dataset/README.md)
+- **Interactive map and analysis**: https://pvtools.lbl.gov/field-degradation
+- **Extraction accuracy** (independent re-extraction of 303 randomly selected papers, disagreements resolved against the PDF): degradation rate 95.9%, PV technology 97.5%, study scope 97.5%, country 99.3%
 
 **Figure: Global PV Degradation Trends Extracted from Literature**
 <img src="https://github.com/lbj2011/PV-LLM/blob/main/doc_img/world_degradation.jpg" width="600"/>
