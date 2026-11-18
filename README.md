@@ -33,13 +33,19 @@ PV-LLM also performs large-scale **literature mining** with LLMs. Papers are fou
 
 **Database (release v1.0)**: 2,210 field-measured annual degradation rates from 662 papers (1980-2026) in 78 countries and regions.
 
-- **Download**: [DuraMAT DataHub](https://datahub-duramat.nlr.gov/data-repo/projects/8c329288-3b34-46ad-9ec5-d62bb06dd664/datasets/9d8e61a8-652b-4de0-949c-dd83010f516d) (`pv_field_degradation_records.csv`, one row per reported rate)
+- **Download**: [field_degradation_dataset/pv_field_degradation_records.csv](field_degradation_dataset/pv_field_degradation_records.csv) (one row per reported rate; also on [DuraMAT DataHub](https://datahub-duramat.nlr.gov/data-repo/projects/8c329288-3b34-46ad-9ec5-d62bb06dd664/datasets/9d8e61a8-652b-4de0-949c-dd83010f516d))
 - **Column description**: [field_degradation_dataset/README.md](field_degradation_dataset/README.md)
 - **Interactive map and analysis**: https://pvtools.lbl.gov/field-degradation
 - **Extraction accuracy** (independent re-extraction of 303 randomly selected papers, disagreements resolved against the PDF): degradation rate 95.9%, PV technology 97.5%, study scope 97.5%, country 99.3%
 
-**Figure: Global PV Degradation Trends Extracted from Literature**
-<img src="https://github.com/lbj2011/PV-LLM/blob/main/doc_img/world_degradation.jpg" width="600"/>
+**Figure: Literature mining pipeline and data completeness**
+<img src="doc_img/pipeline.png" width="900"/>
+
+**Figure: Field degradation rates around the world (1,675 records with complete information)**
+<img src="doc_img/rate_map.png" width="900"/>
+
+**Figure: Distribution of the degradation rates (all data vs. no reported fault)**
+<img src="doc_img/rate_distribution.png" width="600"/>
 
 ---
 
