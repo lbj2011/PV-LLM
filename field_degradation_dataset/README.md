@@ -37,16 +37,16 @@ Download: [DuraMAT DataHub](https://datahub-duramat.nlr.gov/data-repo/projects/8
 | tilt_deg | module tilt, degrees |
 | location_name | site name (test facility, plant or city with region), written from the paper's location statement; `multiple sites` for multi-site records; blank if the paper names no site |
 | country, continent | exposure site (`multiple (...)` for multi-country records) |
-| latitude, longitude | exposure site, decimal degrees; blank if the paper does not name the site (the analysis-set flags and climate zones of 38 such records follow the paper, which used region-level coordinates) |
+| latitude, longitude | exposure site, decimal degrees; blank if the paper does not name the site |
 | pvcz_temperature_zone, pvcz_humidity_zone | PV climate zone (Karin et al., 2019): T1-T8, H1-H5 |
 | faults_observed | faults reported for the modules or system (`; `-separated) |
 | faults_attributed | faults the authors link to the degradation |
 | reversible_losses | soiling, shading, snow or ice cover |
 | reversible_loss_in_rate | whether a reversible loss is included in the rate: yes, possibly, no, none reported |
 | note | caveat of a kept value (bound, qualitative zero, one-off failure, internal inconsistency of the paper, shading loss instead of degradation) |
-| in_complete_info_set | rate, PV technology, duration and coordinates available (1,710 records) |
+| in_complete_info_set | rate, PV technology, duration and coordinates available (1,675 records) |
 | in_rate_distribution_set | used for the rate distribution: duration > 1 yr, rate >= -10 %/yr, no reversible loss in the rate (1,473 records) |
-| in_model_set | used for the LightGBM/SHAP model (1,033 records; filters in the paper, Table 2) |
+| in_model_set | used for the LightGBM/SHAP model (1,001 records; filters in the paper, Table 2) |
 
 ## Scope
 
