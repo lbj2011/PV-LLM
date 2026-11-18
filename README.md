@@ -9,8 +9,6 @@
 
 <p align="center">
   <a href="https://pvtools.lbl.gov"><img src="https://img.shields.io/badge/web%20tools-pvtools.lbl.gov-0868ac"/></a>
-  <a href="https://www.duramat.org"><img src="https://img.shields.io/badge/funded%20by-DuraMAT-43a2ca"/></a>
-  <a href="https://www.lbl.gov"><img src="https://img.shields.io/badge/Berkeley%20Lab-LBNL-7bccc4"/></a>
 </p>
 
 ---
