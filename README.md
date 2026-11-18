@@ -99,6 +99,21 @@ LLMs read the field-degradation literature and extract every reported annual deg
 | **Column description** | [`field_degradation_dataset/README.md`](field_degradation_dataset/README.md) |
 | **Interactive map** | [pvtools.lbl.gov/field-degradation](https://pvtools.lbl.gov/field-degradation) |
 
+### How to cite
+
+> B. Li, D. C. Jordan, M. Springer, D. Chin, R. Daxini, and A. Jain, "Global PV field degradation database," version 1.0, DuraMAT DataHub, 2026. https://datahub-duramat.nlr.gov/data-repo/projects/8c329288-3b34-46ad-9ec5-d62bb06dd664/datasets/9d8e61a8-652b-4de0-949c-dd83010f516d
+
+```bibtex
+@misc{li2026pvfielddegradation,
+  title        = {Global PV field degradation database},
+  author       = {Li, Baojie and Jordan, Dirk C. and Springer, Martin and Chin, Darren and Daxini, Rajiv and Jain, Anubhav},
+  year         = {2026},
+  version      = {1.0},
+  publisher    = {DuraMAT DataHub},
+  howpublished = {\url{https://datahub-duramat.nlr.gov/data-repo/projects/8c329288-3b34-46ad-9ec5-d62bb06dd664/datasets/9d8e61a8-652b-4de0-949c-dd83010f516d}}
+}
+```
+
 ---
 
 ## 3. PV-Copilot

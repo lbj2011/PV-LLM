@@ -1,8 +1,6 @@
 # Global PV field degradation database (release v1.0)
 
-Field-measured annual degradation rates of PV modules and systems, extracted from 662 peer-reviewed papers and conference proceedings (1980-2026) with a large language model and validated against each source PDF. This is the dataset behind:
-
-> B. Li, D. C. Jordan, M. Springer, D. Chin, R. Daxini, A. Jain, [title], [journal], [year]. DOI: [to add]
+Field-measured annual degradation rates of PV modules and systems, extracted from 662 peer-reviewed papers and conference proceedings (1980-2026) with a large language model and validated against each source PDF.
 
 Download: [DuraMAT DataHub](https://datahub-duramat.nlr.gov/data-repo/projects/8c329288-3b34-46ad-9ec5-d62bb06dd664/datasets/9d8e61a8-652b-4de0-949c-dd83010f516d)
 
@@ -54,6 +52,19 @@ Included: field-measured power, energy or performance-ratio degradation of PV mo
 
 Extraction accuracy (independent re-extraction of 303 randomly selected papers with every disagreement resolved against the PDF): degradation rate 95.9%, PV technology 97.5%, study scope 97.5%, country 99.3%.
 
-## License and citation
+## How to cite
 
-[License: CC BY 4.0, to confirm.] Please cite the paper above. The extraction prompts and analysis code are at https://github.com/lbj2011/PV-LLM; an interactive view is at https://pvtools.lbl.gov/field-degradation.
+> B. Li, D. C. Jordan, M. Springer, D. Chin, R. Daxini, and A. Jain, "Global PV field degradation database," version 1.0, DuraMAT DataHub, 2026. https://datahub-duramat.nlr.gov/data-repo/projects/8c329288-3b34-46ad-9ec5-d62bb06dd664/datasets/9d8e61a8-652b-4de0-949c-dd83010f516d
+
+```bibtex
+@misc{li2026pvfielddegradation,
+  title        = {Global PV field degradation database},
+  author       = {Li, Baojie and Jordan, Dirk C. and Springer, Martin and Chin, Darren and Daxini, Rajiv and Jain, Anubhav},
+  year         = {2026},
+  version      = {1.0},
+  publisher    = {DuraMAT DataHub},
+  howpublished = {\url{https://datahub-duramat.nlr.gov/data-repo/projects/8c329288-3b34-46ad-9ec5-d62bb06dd664/datasets/9d8e61a8-652b-4de0-949c-dd83010f516d}}
+}
+```
+
+Interactive view: https://pvtools.lbl.gov/field-degradation
