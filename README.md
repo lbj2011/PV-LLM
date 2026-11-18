@@ -125,7 +125,7 @@ Data in, degradation results out: LLM-assisted, end-to-end degradation analysis 
 </p>
 
 - **Web app**: [pvtools.lbl.gov/pv-copilot](https://pvtools.lbl.gov/pv-copilot)
-- **Code**: [github.com/lbj2011/PVCopilot](https://github.com/lbj2011/PVCopilot) · [PyPI: pvcopilot](https://pypi.org/project/pvcopilot/)
+- **Code**: [github.com/baojiel/PVCopilot](https://github.com/baojiel/PVCopilot) · [PyPI: pvcopilot](https://pypi.org/project/pvcopilot/)
 
 ### How to cite
 
