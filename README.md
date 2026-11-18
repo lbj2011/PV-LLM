@@ -1,65 +1,87 @@
+<p align="center">
+  <img src="doc_img/LLM%20LOGO.jpg" width="240"/>
+</p>
 
-<img src="https://github.com/lbj2011/PV-LLM/blob/main/doc_img/LLM%20LOGO.jpg" width="300"/>
+<p align="center">
+  <b>Multimodal large language models for photovoltaic reliability</b><br/>
+  PV image diagnostics &nbsp;·&nbsp; Literature mining of field degradation
+</p>
 
-# PV-LLM: Leveraging Multimodal LLMs for PV Analysis
-
-PV-LLM is a novel framework that utilizes **multimodal large language models (LLMs)** to perform advanced analysis in photovoltaics (PV), including **degradation assessment** and **health monitoring**. This project demonstrates how AI can accelerate PV system diagnostics and knowledge extraction from global data sources.
-
----
-
-## 1. Unified LLM-Based Framework for Heterogeneous PV Image Diagnostics
-
-This project introduces an **open-source multimodal large language model (LLM)–based framework** for automated photovoltaic (PV) image diagnostics across heterogeneous imaging modalities. The framework enables a **single, task-aware inference pipeline** for diverse PV inspection tasks without task-specific model training.
-
-The framework analyzes multiple PV image types, including:
-
-- **Visible images** (bird droppings, surface contamination)
-- **Infrared (IR) images** (thermal anomalies, e.g., hotspots)
-- **Electroluminescence (EL) images** (microcracks, broken cells)
-
-Key features include **zero-shot and few-shot inference**, **binary and multiclass classification**, and compatibility with state-of-the-art multimodal LLMs (e.g., ChatGPT, Gemini, Claude, CLIP). By eliminating the need for large labeled datasets and retraining, this framework serves as a **rapid pre-screening tool** for scalable PV health monitoring.
-
-**Dataset**: A benchmark dataset of labeled PV images is publicly available at  
-https://datahub.duramat.org/dataset/llm-pv-image
-
-**Figure: Multimodal LLM-based PV Image Analysis Flowchart**
-<img src="https://github.com/lbj2011/PV-LLM/blob/main/doc_img/image_flowchart.jpg" width="600"/>
+<p align="center">
+  <a href="field_degradation_dataset/"><img src="https://img.shields.io/badge/dataset-2%2C210%20records-0868ac"/></a>
+  <a href="https://pvtools.lbl.gov/field-degradation"><img src="https://img.shields.io/badge/web%20tool-pvtools.lbl.gov-43a2ca"/></a>
+  <a href="https://datahub-duramat.nlr.gov/data-repo/projects/8c329288-3b34-46ad-9ec5-d62bb06dd664/datasets/9d8e61a8-652b-4de0-949c-dd83010f516d"><img src="https://img.shields.io/badge/DuraMAT-DataHub-7bccc4"/></a>
+</p>
 
 ---
 
-## 2. Literature Mining: Global PV Field Degradation Database
+## Contents
 
-PV-LLM also performs large-scale **literature mining** with LLMs. Papers are found through Scopus keyword searches, EU PVSEC proceedings and the reference lists of earlier reviews; LLMs screen the papers, extract the reported field degradation rates with their context (PV technology, duration, location, mounting, faults, reversible losses), and every record is validated against the source PDF.
-
-**Database (release v1.0)**: 2,210 field-measured annual degradation rates from 662 papers (1980-2026) in 78 countries and regions.
-
-- **Download**: [field_degradation_dataset/pv_field_degradation_records.csv](field_degradation_dataset/pv_field_degradation_records.csv) (one row per reported rate; also on [DuraMAT DataHub](https://datahub-duramat.nlr.gov/data-repo/projects/8c329288-3b34-46ad-9ec5-d62bb06dd664/datasets/9d8e61a8-652b-4de0-949c-dd83010f516d))
-- **Column description**: [field_degradation_dataset/README.md](field_degradation_dataset/README.md)
-- **Interactive map and analysis**: https://pvtools.lbl.gov/field-degradation
-- **Extraction accuracy** (independent re-extraction of 303 randomly selected papers, disagreements resolved against the PDF): degradation rate 95.9%, PV technology 97.5%, study scope 97.5%, country 99.3%
-
-**Figure: Literature mining pipeline and data completeness**
-<img src="doc_img/pipeline.png" width="900"/>
-
-**Figure: Field degradation rates around the world (1,675 records with complete information)**
-<img src="doc_img/rate_map.png" width="900"/>
-
-**Figure: Distribution of the degradation rates (all data vs. no reported fault)**
-<img src="doc_img/rate_distribution.png" width="600"/>
+1. [PV Image Diagnostics](#1-pv-image-diagnostics)
+2. [Global PV Field Degradation Database](#2-global-pv-field-degradation-database)
+3. [Acknowledgment](#acknowledgment)
 
 ---
 
-## 3. Funding Acknowledgment
+## 1. PV Image Diagnostics
 
-This work is supported by the **Durable Module Materials (DuraMAT) Consortium**, a U.S. Department of Energy initiative focused on PV module reliability and innovation.
+One task-aware multimodal LLM pipeline for visible, infrared (IR) and electroluminescence (EL) images, with no task-specific training.
 
+- **Images**: soiling and bird droppings (visible), hot spots (IR), cracks and broken cells (EL)
+- **Modes**: zero-shot and few-shot, binary and multiclass
+- **Models**: ChatGPT, Gemini, Claude, CLIP
 
-<img src="https://github.com/lbj2011/PV-LLM/blob/main/doc_img/duramat.jpg" width="200"/>
+<p align="center">
+  <img src="doc_img/image_flowchart.jpg" width="80%"/>
+</p>
+
+**Dataset**: [labeled PV image benchmark on DuraMAT DataHub](https://datahub.duramat.org/dataset/llm-pv-image)
 
 ---
 
-## Contact
+## 2. Global PV Field Degradation Database
 
-For questions or collaboration opportunities, please contact the PV-LLM development team: baojieli@lbl.gov.
+LLMs read the field-degradation literature and extract every reported annual degradation rate with its context; each record is validated against the source PDF.
+
+| Records | Papers | Countries & regions | Rate extraction accuracy |
+|:---:|:---:|:---:|:---:|
+| **2,210** | **662** | **78** | **95.9%** |
+
+### Pipeline
+
+<p align="center">
+  <img src="doc_img/pipeline.png" width="100%"/>
+</p>
+
+### Global map
+
+<p align="center">
+  <img src="doc_img/rate_map.png" width="100%"/>
+</p>
+
+### Degradation rate distribution
+
+<p align="center">
+  <img src="doc_img/rate_distribution.png" width="560"/>
+</p>
+
+Median **−0.96 %/year** for all data (1,473 records), **−0.80 %/year** without reported faults (649 records).
+
+### Get the data
+
+| | |
+|---|---|
+| **Dataset (CSV)** | [`field_degradation_dataset/pv_field_degradation_records.csv`](field_degradation_dataset/pv_field_degradation_records.csv) |
+| **Column description** | [`field_degradation_dataset/README.md`](field_degradation_dataset/README.md) |
+| **Interactive map** | [pvtools.lbl.gov/field-degradation](https://pvtools.lbl.gov/field-degradation) |
+| **Archive** | [DuraMAT DataHub](https://datahub-duramat.nlr.gov/data-repo/projects/8c329288-3b34-46ad-9ec5-d62bb06dd664/datasets/9d8e61a8-652b-4de0-949c-dd83010f516d) |
 
 ---
+
+## Acknowledgment
+
+<img src="doc_img/duramat.jpg" width="150" align="right"/>
+
+Supported by the **Durable Module Materials (DuraMAT) Consortium**, U.S. Department of Energy.
+
+**Contact**: baojieli@lbl.gov
