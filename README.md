@@ -8,9 +8,8 @@
 </p>
 
 <p align="center">
-  <a href="field_degradation_dataset/"><img src="https://img.shields.io/badge/dataset-2%2C210%20records-0868ac"/></a>
+  <a href="https://datahub-duramat.nlr.gov/data-repo/projects/8c329288-3b34-46ad-9ec5-d62bb06dd664/datasets/9d8e61a8-652b-4de0-949c-dd83010f516d"><img src="https://img.shields.io/badge/dataset-2%2C210%20records-0868ac"/></a>
   <a href="https://pvtools.lbl.gov/field-degradation"><img src="https://img.shields.io/badge/web%20tool-pvtools.lbl.gov-43a2ca"/></a>
-  <a href="https://datahub-duramat.nlr.gov/data-repo/projects/8c329288-3b34-46ad-9ec5-d62bb06dd664/datasets/9d8e61a8-652b-4de0-949c-dd83010f516d"><img src="https://img.shields.io/badge/DuraMAT-DataHub-7bccc4"/></a>
 </p>
 
 ---
@@ -36,6 +35,21 @@ One task-aware multimodal LLM pipeline for visible, infrared (IR) and electrolum
 </p>
 
 **Dataset**: [labeled PV image benchmark on DuraMAT DataHub](https://datahub.duramat.org/dataset/llm-pv-image)
+
+### How to cite
+
+> B. Li and A. Jain, "A unified large language model–based framework for heterogeneous PV image diagnosis," *Solar Energy*, vol. 315, 114801, 2026.
+
+```bibtex
+@article{li2026unified,
+  title   = {A unified large language model--based framework for heterogeneous PV image diagnosis},
+  author  = {Li, Baojie and Jain, Anubhav},
+  journal = {Solar Energy},
+  volume  = {315},
+  pages   = {114801},
+  year    = {2026}
+}
+```
 
 ---
 
@@ -71,10 +85,9 @@ Median **−0.96 %/year** for all data (1,473 records), **−0.80 %/year** witho
 
 | | |
 |---|---|
-| **Dataset (CSV)** | [`field_degradation_dataset/pv_field_degradation_records.csv`](field_degradation_dataset/pv_field_degradation_records.csv) |
+| **Download data** | [DuraMAT DataHub](https://datahub-duramat.nlr.gov/data-repo/projects/8c329288-3b34-46ad-9ec5-d62bb06dd664/datasets/9d8e61a8-652b-4de0-949c-dd83010f516d) |
 | **Column description** | [`field_degradation_dataset/README.md`](field_degradation_dataset/README.md) |
 | **Interactive map** | [pvtools.lbl.gov/field-degradation](https://pvtools.lbl.gov/field-degradation) |
-| **Archive** | [DuraMAT DataHub](https://datahub-duramat.nlr.gov/data-repo/projects/8c329288-3b34-46ad-9ec5-d62bb06dd664/datasets/9d8e61a8-652b-4de0-949c-dd83010f516d) |
 
 ---
 
