@@ -8,9 +8,9 @@
 </p>
 
 <p align="center">
-  <a href="https://datahub-duramat.nlr.gov/data-repo/projects/8c329288-3b34-46ad-9ec5-d62bb06dd664/datasets/9d8e61a8-652b-4de0-949c-dd83010f516d"><img src="https://img.shields.io/badge/dataset-2%2C210%20records-0868ac"/></a>
-  <a href="https://pvtools.lbl.gov/field-degradation"><img src="https://img.shields.io/badge/web%20tool-pvtools.lbl.gov-43a2ca"/></a>
-  <a href="https://github.com/lbj2011/PVCopilot"><img src="https://img.shields.io/badge/PV--Copilot-repo-7bccc4"/></a>
+  <a href="https://pvtools.lbl.gov"><img src="https://img.shields.io/badge/web%20tools-pvtools.lbl.gov-0868ac"/></a>
+  <a href="https://www.duramat.org"><img src="https://img.shields.io/badge/funded%20by-DuraMAT-43a2ca"/></a>
+  <a href="https://www.lbl.gov"><img src="https://img.shields.io/badge/Berkeley%20Lab-LBNL-7bccc4"/></a>
 </p>
 
 ---
