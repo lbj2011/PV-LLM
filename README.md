@@ -132,7 +132,19 @@ Data in, degradation results out: LLM-assisted, end-to-end degradation analysis 
 |---|---|
 | **Web app** | [pvtools.lbl.gov/pv-copilot](https://pvtools.lbl.gov/pv-copilot) |
 | **Code** | [github.com/lbj2011/PVCopilot](https://github.com/lbj2011/PVCopilot) · [PyPI: pvcopilot](https://pypi.org/project/pvcopilot/) |
-| **Paper** | B. Li and A. Jain, "PV Copilot: A Large Language Model–Enabled Tool for End-to-End PV Degradation Analysis," *IEEE PVSC*, 2026 |
+
+### How to cite
+
+> B. Li and A. Jain, "PV Copilot: A large language model–enabled tool for end-to-end PV degradation analysis," in *Proc. 2026 IEEE Photovoltaic Specialists Conference (PVSC)*, 2026.
+
+```bibtex
+@inproceedings{li2026pvcopilot,
+  title     = {PV Copilot: A large language model--enabled tool for end-to-end PV degradation analysis},
+  author    = {Li, Baojie and Jain, Anubhav},
+  booktitle = {2026 IEEE Photovoltaic Specialists Conference (PVSC)},
+  year      = {2026}
+}
+```
 
 ---
 
