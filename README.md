@@ -93,11 +93,9 @@ LLMs read the field-degradation literature and extract every reported annual deg
 
 ### Get the data
 
-| | |
-|---|---|
-| **Download data** | [DuraMAT DataHub](https://datahub-duramat.nlr.gov/data-repo/projects/8c329288-3b34-46ad-9ec5-d62bb06dd664/datasets/9d8e61a8-652b-4de0-949c-dd83010f516d) |
-| **Column description** | [`field_degradation_dataset/README.md`](field_degradation_dataset/README.md) |
-| **Interactive map** | [pvtools.lbl.gov/field-degradation](https://pvtools.lbl.gov/field-degradation) |
+- **Download data**: [DuraMAT DataHub](https://datahub-duramat.nlr.gov/data-repo/projects/8c329288-3b34-46ad-9ec5-d62bb06dd664/datasets/9d8e61a8-652b-4de0-949c-dd83010f516d)
+- **Column description**: [`field_degradation_dataset/README.md`](field_degradation_dataset/README.md)
+- **Interactive map**: [pvtools.lbl.gov/field-degradation](https://pvtools.lbl.gov/field-degradation)
 
 ### How to cite
 
@@ -128,10 +126,8 @@ Data in, degradation results out: LLM-assisted, end-to-end degradation analysis 
   <img src="doc_img/pipeline_pvcopilot.png" width="90%"/>
 </p>
 
-| | |
-|---|---|
-| **Web app** | [pvtools.lbl.gov/pv-copilot](https://pvtools.lbl.gov/pv-copilot) |
-| **Code** | [github.com/lbj2011/PVCopilot](https://github.com/lbj2011/PVCopilot) · [PyPI: pvcopilot](https://pypi.org/project/pvcopilot/) |
+- **Web app**: [pvtools.lbl.gov/pv-copilot](https://pvtools.lbl.gov/pv-copilot)
+- **Code**: [github.com/lbj2011/PVCopilot](https://github.com/lbj2011/PVCopilot) · [PyPI: pvcopilot](https://pypi.org/project/pvcopilot/)
 
 ### How to cite
 
