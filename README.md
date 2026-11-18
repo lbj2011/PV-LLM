@@ -70,7 +70,7 @@ LLMs read the field-degradation literature and extract every reported annual deg
 - **1,675** records with complete rate, technology, duration and location
 
 <p align="center">
-  <img src="doc_img/pipeline.png" width="100%"/>
+  <img src="doc_img/pipeline.png" width="80%"/>
 </p>
 
 ### Global map
@@ -79,7 +79,7 @@ LLMs read the field-degradation literature and extract every reported annual deg
 - Most records from **Asia** (35%) and **Europe** (26%)
 
 <p align="center">
-  <img src="doc_img/rate_map.png" width="100%"/>
+  <img src="doc_img/rate_map.png" width="80%"/>
 </p>
 
 ### Degradation rate distribution
@@ -88,7 +88,7 @@ LLMs read the field-degradation literature and extract every reported annual deg
 - Median **−0.80 %/year** without reported faults (649 records)
 
 <p align="center">
-  <img src="doc_img/rate_distribution.png" width="560"/>
+  <img src="doc_img/rate_distribution.png" width="420"/>
 </p>
 
 ### Get the data
